@@ -56,11 +56,12 @@ typedef struct variables
 extern global_variables vars;
 
 int get_opcodes(char *cmd);
-void _push(stack_t **stack, unsigned int line_number);
 int is_num(char *value);
 void addnode(stack_t **head, int n);
 void free_stack_t(stack_t *head);
+void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
+void _pop(stack_t **stack, unsigned int line_number);
 
 #endif

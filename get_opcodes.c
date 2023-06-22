@@ -16,6 +16,7 @@ int get_opcodes(char *cmd)
 		{"push", _push},
 		{"pall", _pall},
         {"pint", _pint},
+        {"pop", _pop},
 		{NULL, NULL}
 	};
 
