@@ -4,13 +4,13 @@
 global_variables vars;
 
 /**
-* main - runs the monty code interpreter
-*
-* @argc: argument count
-* @argv: argument vector
-*
-* Return: Always 0
-*/
+ * main - runs the monty code interpreter
+ *
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: Always 0
+ */
 
 int main(int argc, char *argv[])
 {
@@ -32,12 +32,12 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 
-    vars.value = NULL;
+	vars.value = NULL;
 	vars.head = NULL;
 	vars.line_num = 0;
 	vars.mode = 0;
 
-    line_size = getline(&buffer, &buff_len, file);
+	line_size = getline(&buffer, &buff_len, file);
 	while (line_size >= 0)
 	{
 		vars.line_num++;

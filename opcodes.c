@@ -2,7 +2,7 @@
 
 /**
  * _push - pushes an element to the stack
- * 
+ *
  * @stack: stack to add onto
  * @line_number: current line of file
  */

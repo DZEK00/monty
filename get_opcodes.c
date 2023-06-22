@@ -2,7 +2,7 @@
 
 /**
  * get_opcodes - get the function for a corresponding command
- * 
+ *
  * @cmd: command to check
  *
  * Return: Always 0
@@ -14,11 +14,11 @@ int get_opcodes(char *cmd)
 
 	instruction_t funcs[] = {
 		{"push", _push},
-        {"pall", _pall},
+		{"pall", _pall},
 		{NULL, NULL}
 	};
 
-    while (funcs[i].opcode && cmd)
+	while (funcs[i].opcode && cmd)
 	{
 		if (strcmp(funcs[i].opcode, cmd) == 0)
 		{
@@ -28,6 +28,6 @@ int get_opcodes(char *cmd)
 		i++;
 	}
 	fprintf(stderr, "L%d: unknown instruction %s\n",
-	    vars.line_num, cmd);
+			vars.line_num, cmd);
 	exit(EXIT_FAILURE);
 }
