@@ -61,5 +61,6 @@ int is_num(char *value);
 void addnode(stack_t **head, int n);
 void free_stack_t(stack_t *head);
 void _pall(stack_t **stack, unsigned int line_number);
+void _pint(stack_t **stack, unsigned int line_number);
 
 #endif

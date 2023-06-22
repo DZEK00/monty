@@ -15,6 +15,7 @@ int get_opcodes(char *cmd)
 	instruction_t funcs[] = {
 		{"push", _push},
 		{"pall", _pall},
+        {"pint", _pint},
 		{NULL, NULL}
 	};
 
