@@ -58,7 +58,7 @@ void _pint(stack_t **stack, unsigned int line_number)
 
 /**
  * _pop - removes the top element of the stack
- * 
+ *
  * @stack: stack to remove from
  * @line_number: current line of file
  */
@@ -82,14 +82,14 @@ void _pop(stack_t **stack, unsigned int line_number)
 
 /**
  * _swap - swaps the top two elements of the stack
- * 
+ *
  * @stack: the stack to swap from
  * @line_number: current line of file
-*/
+ */
 
 void _swap(stack_t **stack, unsigned int line_number)
 {
-    stack_t *temp;
+	stack_t *temp;
 
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
